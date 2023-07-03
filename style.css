@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/*共通部分
+-----------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    line-height: 1.7;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 35px;
+}
+img{
+    max-width: 100%;
+}
+/*header
+--------------------------*/
+li{
+    list-style: none;
+    float: left;
+}
+h1 a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.main-nav{
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 10px;
+}
+.main-nav li{
+    margin-left: 30px;
+}
+
+.main-nav a{
+    color: black;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color: brown;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #efe5dc;
+    background-position: 0px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0px 30px 0px 30px;
+}
+
+/*大きな背景画像*/
+#home{
+    background-image: url(portfolio.img/Amy.Designhero.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h2{
+    font-size: 100px;
+    color: #9C5E4D;
+    text-align: center;
+    padding-top: 350px;
+}
+
+h3{
+    margin: 30px;
+}
+.works{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #fff1e6;
+}
+.works ul{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+.works li{
+    list-style: none;
+    margin: 30px;
+    
+}
+.about{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color: #fbfbf2;
+}
+
+.profile{
+    display: flex;
+}
+.myimage{
+    width: 300px;
+    height: auto;
+    margin: 30px 30px 30px 200px;
+}
+.right{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 545px;
+    height: 452px;
+    text-align: center;
+}
+.profile .title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.profile .text{
+    font-size: 18px;
+    margin: 15px 30px 15px 30px;
+    line-height: 30px;
+}
+
+.service{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color: #f5ebe0;
+}
+
+.grid {
+    display: grid;
+    gap: 65px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.item{
+    outline: 2px #D0B8AC solid;
+    border-radius: 5px;
+    width: 280px;
+    height: 550px;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #FBFEFB;
+}
+.item img{
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.item-title{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.contact{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color: #fbfbf2;
+}
+form div{
+    margin-bottom: 20px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"], input[type="email"], textarea{
+    border-radius: 5px;
+    outline: 2px #D0B8AC solid;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+}
+input[type="text"], input[type="email"]{
+    width: auto;
+}
+textarea{
+    width: min-content;
+    height: 8rem;
+}
+
+input[type="submit"]{
+    outline: 2px #D0B8AC solid;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+
+/*ここからworksページのCSS*/
+
+.workspage{
+    background-color: #f5ebe0;
+}
+h4{
+    text-align: center;
+    padding: 100px 30px 30px 30px;
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+.worksitem1{
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    margin: 25px 25px 25px 80px;
+}
+.worksitem2{
+    width: 200px;
+    height: auto;
+    padding: 15px;
+    margin: 25px
+}
+.workstext{
+    width: 600px;
+    height: 700px;
+    text-align: left;
+    padding: 30px 15px 30px 15px;
+    margin: 25px 80px 25px 25px;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #FFF8F0;
+}
+.workstext p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    #home{
+        margin-top: 20%;
+        background-image: url(portfolio.img/Amy.Designhero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 800px;
+    }
+
+
+
+}
