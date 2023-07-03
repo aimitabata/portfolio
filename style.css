@@ -246,38 +246,33 @@ h4{
 /* モバイル版
 ------------------------------- */
 @media (max-width: 600px) {
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
+    .h2 {
+        font-size: 30px;
+        padding-top: 300px;
     }
 
-    /* HEADER */
     .main-nav {
         font-size: 1rem;
-        margin-top: 10px;
+        padding-top: 10px;
     }
     .main-nav li {
         margin: 0 20px;
     }
+    .header{
+        display: none;
+        position: fixed;
+    }
 
-    /* HOME */
-    #home{
+    .home-content {
         margin-top: 20%;
-        background-image: url(portfolio.img/Amy.Designhero.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
     }
 
+    .works ul{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-    h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 800px;
     }
-
-
-
+    
 }
